@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102a43"/>
+      <stop offset="100%" stop-color="#1f6f8b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="28" fill="url(#bg)"/>
+  <g fill="none" stroke="#9fb3c8" stroke-width="5" opacity="0.95">
+    <rect x="120" y="180" width="220" height="110" rx="16"/>
+    <rect x="490" y="95" width="220" height="110" rx="16"/>
+    <rect x="490" y="260" width="220" height="110" rx="16"/>
+    <rect x="490" y="425" width="220" height="110" rx="16"/>
+    <rect x="860" y="260" width="220" height="110" rx="16"/>
+    <path d="M340 235 H430 Q460 235 460 205 V150 H490"/>
+    <path d="M340 235 H490"/>
+    <path d="M340 235 H430 Q460 235 460 265 V315 H490"/>
+    <path d="M710 150 H770 Q810 150 810 235 V315 H860"/>
+    <path d="M710 315 H860"/>
+    <path d="M710 480 H770 Q810 480 810 395 V315 H860"/>
+  </g>
+  <g fill="#ffffff" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="230" y="225" font-size="30" font-weight="700">Sales OLTP</text>
+    <text x="600" y="142" font-size="27" font-weight="700">Customer Dim</text>
+    <text x="600" y="307" font-size="27" font-weight="700">Product Dim</text>
+    <text x="600" y="472" font-size="27" font-weight="700">Salesman Dim</text>
+    <text x="970" y="307" font-size="30" font-weight="700">Sales Fact</text>
+  </g>
+  <text x="600" y="56" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" text-anchor="middle">Sales OLTP → Data Warehouse</text>
+  <text x="600" y="595" fill="#d9e2ec" font-family="Arial, Helvetica, sans-serif" font-size="28" text-anchor="middle">SSIS • SCD • Surrogate-Key Lookups • Incremental ETL</text>
+</svg>
