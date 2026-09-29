@@ -1,0 +1,337 @@
+/* Portfolio-specific layout enhancements */
+
+:root {
+  --portfolio-accent: #18bfef;
+  --portfolio-ink: #1e252d;
+  --portfolio-muted: #6b7280;
+  --portfolio-surface: #ffffff;
+  --portfolio-soft: #f5f7fa;
+  --portfolio-border: #e6e9ed;
+  --portfolio-shadow: 0 14px 38px rgba(30, 37, 45, 0.09);
+}
+
+/* Hero */
+#intro.portfolio-intro {
+  min-height: 78vh;
+  padding: 7rem 2rem 4.5rem;
+  justify-content: center;
+}
+
+#intro.portfolio-intro h1 {
+  margin-bottom: 0.35rem;
+  font-size: clamp(3.1rem, 9vw, 6.3rem);
+  line-height: 0.98;
+}
+
+#intro .intro-role {
+  margin: 0 0 1.2rem;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #18bfef;
+}
+
+#intro .intro-copy {
+  max-width: 760px;
+  margin: 0 auto 1.75rem;
+  font-size: 1.16rem;
+  line-height: 1.8;
+}
+
+.hero-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  max-width: 850px;
+  margin: 0 auto 2rem;
+}
+
+.hero-stack span,
+.project-tags span {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.hero-stack span {
+  padding: 0.42rem 0.78rem;
+  border: 1px solid rgba(255,255,255,0.28);
+  background: rgba(255,255,255,0.07);
+  color: #fff;
+  font-size: 0.76rem;
+}
+
+.hero-actions {
+  margin: 0;
+}
+
+.hero-actions .button {
+  min-width: 10.5rem;
+}
+
+/* Navigation */
+#nav .links a {
+  letter-spacing: 0.12em;
+}
+
+/* Section headings */
+.section-intro {
+  text-align: center;
+  padding: 3.5rem 3rem 2.5rem !important;
+  background: #fff;
+}
+
+.section-intro h2 {
+  margin-bottom: 0.75rem;
+  font-size: 2.15rem;
+}
+
+.section-intro p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--portfolio-muted);
+  line-height: 1.75;
+}
+
+/* Flagship project */
+#main > .flagship {
+  padding: 3rem 4rem 3.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+  gap: 3rem;
+  align-items: center;
+  text-align: left;
+}
+
+.flagship-copy .eyebrow {
+  margin: 0 0 0.8rem;
+  color: #168fba;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.73rem;
+}
+
+.flagship h2 {
+  margin: 0 0 1rem;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.flagship p {
+  color: #525b65;
+  line-height: 1.75;
+}
+
+.flagship .image {
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--portfolio-shadow);
+  background: #eef2f5;
+}
+
+.flagship .image img {
+  width: 100%;
+  min-height: 320px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flagship .actions {
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+/* Project card grids */
+#main > .posts.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.35rem;
+  padding: 1.35rem 1.35rem 2.75rem;
+  background: var(--portfolio-soft);
+  border-top: 0;
+}
+
+#main > .posts.project-grid > article.project-card {
+  width: auto;
+  padding: 0;
+  border: 1px solid var(--portfolio-border) !important;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--portfolio-surface);
+  box-shadow: 0 8px 24px rgba(30, 37, 45, 0.055);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#main > .posts.project-grid > article.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--portfolio-shadow);
+}
+
+.project-card .project-image {
+  display: block;
+  width: 100%;
+  height: 250px;
+  margin: 0;
+  overflow: hidden;
+  background: #edf1f4;
+  border-bottom: 1px solid var(--portfolio-border);
+}
+
+.project-card .project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card .project-image.contain img {
+  object-fit: contain;
+  padding: 1rem;
+  background: #f7f9fb;
+}
+
+.project-card .card-body {
+  padding: 1.75rem 1.75rem 1.55rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-card h3 {
+  margin: 0 0 0.7rem;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.project-card p {
+  margin-bottom: 1.2rem;
+  color: #59636e;
+  line-height: 1.7;
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+  margin-bottom: 1.3rem;
+}
+
+.project-tags span {
+  padding: 0.3rem 0.65rem;
+  background: #edf7fb;
+  color: #176e8d;
+  font-size: 0.68rem;
+}
+
+.project-card .actions {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.project-card .button {
+  font-size: 0.72rem;
+}
+
+/* Analytics section gets a softer visual break */
+.analytics-section {
+  background: #f9fafb;
+  border-top: 1px solid var(--portfolio-border) !important;
+}
+
+/* Footer */
+#footer {
+  margin-top: 0;
+}
+
+#footer .contact a {
+  border-bottom-color: transparent;
+}
+
+/* Accessibility / polish */
+a.image:focus-visible,
+.button:focus-visible {
+  outline: 3px solid var(--portfolio-accent);
+  outline-offset: 3px;
+}
+
+@media screen and (max-width: 980px) {
+  #main > .flagship {
+    grid-template-columns: 1fr;
+    padding: 3rem;
+  }
+
+  .flagship .image img {
+    min-height: 0;
+    max-height: 430px;
+  }
+
+  #main > .posts.project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #intro.portfolio-intro {
+    min-height: 70vh;
+    padding: 5rem 1.5rem 3rem;
+  }
+
+  #intro .intro-copy {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    width: min(100%, 22rem);
+  }
+
+  #main > .flagship {
+    padding: 2rem;
+    gap: 1.75rem;
+  }
+
+  .section-intro {
+    padding: 2.4rem 1.5rem 1.8rem !important;
+  }
+
+  #main > .posts.project-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem 2rem;
+  }
+
+  .project-card .project-image {
+    height: 220px;
+  }
+
+  .project-card .card-body {
+    padding: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #intro.portfolio-intro h1 {
+    font-size: 3rem;
+  }
+
+  .hero-stack {
+    gap: 0.4rem;
+  }
+
+  .flagship h2 {
+    font-size: 1.8rem;
+  }
+
+  .project-card .project-image {
+    height: 200px;
+  }
+}
