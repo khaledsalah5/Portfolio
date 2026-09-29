@@ -6,11 +6,14 @@ A static personal portfolio website used to present Data Engineering, ETL, Data 
 The site links to project repositories, professional profiles, resume material, and project visuals.
 
 ## Featured Work
-The portfolio includes examples such as:
-- SSIS sales data warehouse projects.
-- Telecom ETL processing.
-- Excel / BI dashboards.
-- Data Engineering and analytics projects.
+The portfolio includes:
+- AdventureWorks and Sales OLTP data warehouses built with SQL Server and SSIS.
+- Telecom ETL processing with validation, auditing, and error handling.
+- PortOps medallion-style data mart with SSIS, T-SQL, SCD Type 2, and Power BI.
+- Airbnb analytics engineering with dbt Core and Snowflake.
+- LendingClub batch + streaming data platform using PySpark, Airbyte, dbt, Snowflake, Kafka, Airflow, AWS, Power BI, and Grafana.
+- Splunk ITSI observability implementation for the FitStyle e-commerce platform.
+- Excel / BI dashboards and analytics projects.
 
 ## Tech Stack
 - HTML5
